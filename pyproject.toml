@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "app"
+package-mode = false
+version = "0.1.0"
+description = "Streamlit web app accompagning : When Voices interleave:Timing Deviations in Six Performances of Telemann's Fantasias for Solo Flute"
+authors = ["Patrice Thibaud"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+music21 = "^9.1.0"
+matplotlib = "^3.9.0"
+streamlit = "1.42.0"
+pandas = "^2.2.2"
+numpy = "^2.2.2"
+cmasher = "^1.9.2"
+seaborn = "^0.13.2"
+streamlit-pdf-viewer = "^0.0.21"
+scipy = "^1.15.2"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+pythonpath = [
+    "src"
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
